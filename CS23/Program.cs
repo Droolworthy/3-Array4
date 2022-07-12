@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CS23
 {
@@ -8,9 +8,7 @@ namespace CS23
         {
             bool canExitApp = true;
             string userInput;
-            int amount = 0;
-            int lengthArray = 0;
-            int[] array = new int[lengthArray];
+            int[] array = new int[0];
             
             while (canExitApp)
             {
@@ -19,6 +17,8 @@ namespace CS23
 
                 if (userInput == "sum")
                 {
+                    int amount = 0;
+
                     for (int i = 0; i < array.Length; i++)
                     {
                         amount += array[i];
